@@ -37,12 +37,12 @@
     }
     // Load all partials
     Promise.all([
-      loadPartial('navbar-placeholder', '../src/partials/navbar.html'),
-      loadPartial('hero-placeholder', '../src/partials/hero.html'),
-      loadPartial('about-placeholder', '../src/partials/about.html'),
-      loadPartial('projects-placeholder', '../src/partials/projects.html'),
-      loadPartial('contact-placeholder', '../src/partials/contact.html'),
-      loadPartial('footer-placeholder', '../src/partials/footer.html')
+      loadPartial('navbar-placeholder', './src/partials/navbar.html'),
+      loadPartial('hero-placeholder', './src/partials/hero.html'),
+      loadPartial('about-placeholder', './src/partials/about.html'),
+      loadPartial('projects-placeholder', './src/partials/projects.html'),
+      loadPartial('contact-placeholder', './src/partials/contact.html'),
+      loadPartial('footer-placeholder', './src/partials/footer.html')
     ]).then(() => {
       // Load scripts.js after partials are loaded
       const script = document.createElement('script');
